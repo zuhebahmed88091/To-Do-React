@@ -45,13 +45,12 @@ const TodosLogic = () => {
   };
   return (
     <div>
-      <InputTodo />
+      <InputTodo addTodoItem={addTodoItem} />
       <TodosList
         todosProps={todos}
         handleChange={handleChange}
         delTodo={delTodo}
       />
-      <InputTodo addTodoItem={addTodoItem} />
     </div>
   );
 };
